@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "68b117ba-cf92-42f9-bdb7-08a136d31fef",
+		"name": "To Do",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24673674"
+	},
+	"item": [
+		{
+			"name": "Create Todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Watch ANime\",\r\n    \"description\": \"Horimiya and my hero academia \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/createTodo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"createTodo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Todo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Go Gym\",\r\n    \"description\": \"Today Back Biceps and forearms session\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/updateTodo/64bf9571eb841b2e7d0a7960",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"updateTodo",
+						"64bf9571eb841b2e7d0a7960"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/v1/getTodos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"getTodos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Todo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/getTodo/64bf9571eb841b2e7d0a7960",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"getTodo",
+						"64bf9571eb841b2e7d0a7960"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleted todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/v1/deleteTodo/64bf9571eb841b2e7d0a7960",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"deleteTodo",
+						"64bf9571eb841b2e7d0a7960"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
